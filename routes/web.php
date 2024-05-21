@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/etudiant', function () {
+    $test = "yann" . "banvi";
+    return view("etudiant", compact("test"));
+});
