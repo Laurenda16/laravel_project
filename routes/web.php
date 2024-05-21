@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EtudiantController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/etudiant', function () {
-    $test = "yann" . "banvi";
-    return view("etudiant", compact("test"));
-});
+Route::get('/etudiant', [EtudiantController::class, "index"]);
