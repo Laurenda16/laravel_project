@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->id();
-            $table->String("nom");
-            $table->String("prenom");
+            $table->string("nom");
+            $table->string("prenom");
             $table->foreignId("classe_id")->constrained("classes");
             $table->timestamps();
         });
@@ -27,9 +27,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table("etudiants", function (Blueprint $table) {
+        /* Schema::table("etudiants", function (Blueprint $table) {
             $table->dropConstrainedForeignId("classe_id");
-        });
+        });*/
         Schema::dropIfExists('etudiants');
     }
 };
