@@ -27,9 +27,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        /* Schema::table("etudiants", function (Blueprint $table) {
-            $table->dropConstrainedForeignId("classe_id");
-        });*/
+        Schema::table("etudiants", function (Blueprint $table) {
+            $table->dropForeignId("classe_id");
+        });
         Schema::dropIfExists('etudiants');
     }
 };
