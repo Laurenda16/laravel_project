@@ -23,7 +23,11 @@ class EtudiantFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+          
+                'nom' =>$this->faker->lastName,
+                'prenom' =>$this-> faker->firstName(),
+                'classe_id' => rand(1,7)
+                
         ];
     }
 }
