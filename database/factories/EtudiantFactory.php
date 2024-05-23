@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class EtudiantFactory extends Factory
 {
-    
+
     protected $model = ModelsEtudiant::class;
     /**
      * Define the model's default state.
@@ -23,11 +23,11 @@ class EtudiantFactory extends Factory
     public function definition(): array
     {
         return [
-          
-                'nom' =>$this->faker->lastName,
-                'prenom' =>$this-> faker->firstName(),
-                'classe_id' => rand(1,7)
-                
+
+            'nom' => $this->faker->lastName,
+            'prenom' => $this->faker->firstName(),
+            'classe_id' => rand(1, 7),
+
         ];
     }
 }

@@ -5,13 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Etudiant extends Model
+class Classe extends Model
 {
-    use HasFactory;
 
-    public function classe()
-    {
-        $this->hasOne(Classe::class);
-    }
-  
+    use HasFactory;
 }
