@@ -61,7 +61,7 @@
           <a class="nav-link active" aria-current="page" href="{{route('accueil')}}">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('etudiant')}}">Etudiant</a>
+          <a class="nav-link" href=" {{route('etudiant')}} ">Etudiant</a>
         </li>
        
       </ul>
