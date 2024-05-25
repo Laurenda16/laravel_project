@@ -2,8 +2,11 @@
 
 namespace Database\Factories;
 
+//use Illuminate\Database\Factories\Etudiant;
+
 use App\Models\Etudiant as ModelsEtudiant;
-use Illuminate\Database\Factories\Etudiant;
+use App\Models\EtudiantModel;
+use Illuminate\Database\Factorie\Etudiant;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -12,13 +15,12 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class EtudiantFactory extends Factory
 {
-
-    protected $model = ModelsEtudiant::class;
     /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
      */
+protected $model = EtudiantModel::class;
 
     public function definition(): array
     {
